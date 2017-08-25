@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Table</title>
+	<style>
+		table {width:300px;}
+	
+		table, th, td {
+			border-collapse:collapse;
+			border:1px solid black;
+			padding:5px;
+			text-align:center;
+		}
+		
+		th {
+			background:#ccc;
+		}
+	</style>
+</head>
+<body>
+
+	<!--
+		目標1 : 建立 3 x 4 的 Table, 如下
+
+			Head-1	Head-2	Head-3
+			(1,1)	(1,2)	(1,3)
+			(2,1)	(2,2)	(2,3)
+			(3,1)	(3,2)	(3,3)
+			
+		目槱2 : 將(1,1)和(1,2)合併
+		目樮3 : 將(2,1)和(3,1)合併
+	
+	-->
+
+
+	<!-- 將 table 新增在此 -->
+	
+	<table>
+		<tr>    <!-- table row, 先切 row, 再切 column -->
+			<th>Head-1</th><th>Head-2</th><th>Head-3</th>    <!-- table head -->	
+		</tr>
+		
+		<tr>
+			<td>(1,1)</td><td>(1,2)</td><td>(1,3)</td>    <!-- table data -->
+		</tr>
+		
+		<tr>
+			<td>(2,1)</td><td>(2,2)</td><td>(2,3)</td>
+		</tr>
+	
+		<tr>
+			<td>(3,1)</td><td>(3,2)</td><td>(3,3)</td>
+		</tr>
+		
+	</table>
+	
+	
+</body>
+</html>
+
