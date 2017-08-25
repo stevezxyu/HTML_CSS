@@ -1,2 +1,2 @@
 # HTML_CSS
-This is my html and css file.
+This is my HTML and CSS file.
