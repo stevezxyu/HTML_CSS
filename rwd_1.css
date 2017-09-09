@@ -1,0 +1,41 @@
+
+/*
+	1. 設定 section 寬度66% 靠左
+	2. 設定 aside 寬度 33% 靠右
+*/
+
+@media only screen and (max-width:960px)  {
+	
+	.menu {
+		position:absolute;		/* menu (三條線圖式) 往右靠 */
+		top:20px;
+		right:20px;
+	}
+	
+	nav	{
+		display:none;			/* 使 nav (Home,...,Contact 等的文字) 消失 */
+	}
+}
+
+@media only screen and (min-width:961px) {
+	
+	.menu {
+		display:none;		/* 使 menu (三條線圖式) 消失 */
+	}
+	
+	
+	section {
+		width:66%;
+		float:left;			/* 靠左擺放 */
+	}
+	
+	aside {
+		width:33%;
+		float:right;		/* 靠右擺放 */
+	}
+	
+	footer {
+		clear:both;			/* 排除附近的元素 */
+	}
+	
+}

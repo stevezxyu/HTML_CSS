@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Responsive Web Design</title>
+	<style>
+	
+		body {
+			margin:10px 20px;
+		}
+		
+		.margin-test {
+			width:100px;
+			height:70px;
+			border:1px solid black;
+			background:green;
+			float:left;
+			
+		}
+		
+		.percent {
+			margin:5%;
+		}
+		
+		.em {
+			margin:2em;
+		}
+		
+		.padding-test {
+			display:inline-block;
+			border:1px solid black;
+			background:green;
+			text-align:center;
+		}
+		
+		.padding-test span {
+			background:yellow;
+		}
+
+		
+	
+	</style>
+</head>
+<body>
+
+	<h1>文字</h1><hr><br/>
+	
+	<p style="font-size:100%">文字大小 : 100%</p>
+	<p style="font-size:1em">文字大小 : 1em</p>
+	
+	<br/><br/>
+	
+	<h1>圖像 - &lt;img&gt;</h1><hr><br/>
+	
+	<p>
+		圖像大小 : 寬:10%, 高10% - 
+		<img src="images/klematis.jpg" style="width:10%;height:10%;">
+	</p>
+	
+	<p>
+		圖像大小 : 寬:5em, 高5em - 
+		<img src="images/klematis.jpg" style="width:5em;height:5em;">
+	</p>
+	
+		<br/><br/>
+
+		<h1>Box</h1><hr><br/>
+	<p>
+		&lt;DIV&gt;大小 : 寬:40%, 高100%
+		<div style="width:40%;height:100%;border:1px dashed red;">響應式網頁設計</div>
+	</p>
+
+	<p>
+		&lt;DIV&gt;大小 : 寬:40em, 高5em
+		<div style="width:40em;height:5em;border:1px dashed red;">響應式網頁設計</div>
+	</p>
+	
+	<h1>Margin</h1><hr><br/>
+	<p>
+		margin:20% :
+		<div class="margin-test percent"></div>
+		<div class="margin-test percent"></div>
+		<div class="margin-test percent" style="clear:left;"></div>
+		<div class="margin-test percent"></div>
+	</p>
+	
+	<p style="clear:left;">
+		margin:2em :
+		<div class="margin-test em"></div>
+		<div class="margin-test em"></div>
+		<div class="margin-test em" style="clear:left;"></div>
+		<div class="margin-test em"></div>
+	</p>
+	
+	<h1 style="clear:left">Padding</h1><hr><br/>
+	
+	<p>
+		padding:5% : 
+		<div class="padding-test" style="padding:5%;"><span>響應式網頁設計</span></div>
+	</p>
+	
+	<p>
+		padding:3em;
+		<div class="padding-test" style="padding:2em;"><span>響應式網頁設計</span></div>
+	</p>
+
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	
+</body>
+</html>
