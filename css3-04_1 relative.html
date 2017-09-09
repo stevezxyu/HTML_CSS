@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Relative Position</title>
+	<style>
+		body { color : #000080;}
+		hr { border : 2px dashed red;}
+		#outer { width:800px;height:500px;background:pink; }
+		#inner { width:500px;height:300px;background:green;}
+		
+		/*
+			觀察 Relative Position 的行為
+			
+			1. 將 inner div 設定 relative position
+			2. 將 inner div 設定 top = -100px, left = -100px;
+		*/
+		
+		#inner {position:relative; top:-100px; left:-100px;}      /* 浮到上一層, 但不會影響文件流, 不會往上移動補滿 */
+		
+	</style>
+</head>
+<body>
+	<h1>Relative Position 示範</h1><hr><br/><br/>
+
+	<div id="outer" style="">
+		<p>The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position</p>
+		<p>The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position</p>
+
+		<div id="inner" style="">
+		</div>
+
+		<p>The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position</p>
+		<p>The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position</p>
+		
+	</div>
+
+
+</bodY>
+</html>

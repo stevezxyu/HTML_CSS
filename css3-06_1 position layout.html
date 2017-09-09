@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Layout</title>
+	<style>
+		body {
+			margin:0;
+			font-size : 2em;
+		}
+		
+		.wrapper {
+			width : 100%;
+		}
+		
+		.center-area {
+			/* width : 960px; */  width: 80%;
+			margin : 0 auto;
+		}
+		
+		.row1 {
+			background-color : rgb(255, 174, 201);
+		}
+		
+		.row2 {
+			background-color : #eee;
+		}
+
+		.row3 {
+			background-color : #eee;
+		}
+
+		.row4 {
+			background-color : rgb(255, 174, 201);
+		}
+
+		header {
+			background : #ffff80;
+			height : 100px;
+			line-height : 100px;
+			text-align : center;
+		}
+		
+		nav {
+			background : gray;
+			height : 50px;
+			line-height : 50px;
+			text-align : center;
+		}
+
+		#main {
+			background : #80ffff;
+		}
+		
+		footer {
+			background : #ffad5b;
+			height : 100px;
+			line-height : 100px;
+			text-align : center;
+		}
+		
+		#menu {
+			background : #ccc;
+			width: 200px;
+			height : 200px;
+			line-height : 200px;
+			text-align : center;
+		}
+		
+		#content {
+			/* width : 560px; */
+			/* height : 200px; */
+			line-height : 200px;
+			text-align : center;
+			background : yellow;
+		}
+		
+		aside {
+			background : #80ff00;
+			width: 200px;
+			height : 200px;
+			line-height : 200px;
+			text-align : center;
+		}
+		
+		/* 利用 Position 元素切割直欄 */
+		
+		#main {position:relative;}
+		
+		#menu {position:absolute; height:100%;}						/*  height:100% 把元素的高度延伸撐滿 */
+		aside {position:absolute; top:0; right:0; height:100%;}
+		#content {margin-left:200px; margin-right:200px;}
+		
+		
+	</style>
+</head>
+	<div class="wrapper row1">
+		<header class="center-area">
+			&lt;Header&gt;
+		</header>
+	</div>
+
+	<div class="wrapper row2">
+		<nav class="center-area">
+			&lt;NAV&gt;
+		</nav>
+	</div>
+	<div class="wrapper row3">
+		<div id="main" class="center-area">
+		
+		
+			<div id="menu">
+				Menu
+			</div>
+			
+			<div id="content">
+				content<br/>
+				content<br/>
+				content<br/>
+			</div>
+			
+			<aside>
+				Aside
+			</aside>
+			
+		</div>
+	</div>
+
+	<div class="wrapper row4">
+		<footer class="center-area">
+			&lt;Footer&gt;
+		</footer>
+	</div>
+	
+</bodY>
+</html>

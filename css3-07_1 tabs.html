@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tabs</title>
+	<style>
+		body { margin:50px;}
+		
+		.tabs { width:100px;height:50px;line-height:50px;text-align:center;color:blue;background:#99d9ea;border:1px solid #00b;}
+		.content { width:500px;height:300px;color:blue;background:#99d9ea;border:1px solid #00b;}
+		.content span { margin-left:30px; line-height:50px; }
+		
+		
+		/*  利用 position, layer 製作分頁元件  */
+		
+		#tab-control {position:relative;}
+		
+		.tabs {position:absolute; z-index:10;}            /* 往上移讓選擇器的線蓋住下方大框架的邊線 */
+		#tab2 {left:101px;}
+		#tab3 {left:201px;}
+		
+		.content {position:absolute; top:50px;}
+		
+		.selected { border-bottom:1px solid #99d9ea;}     	/* 設定選擇器, 底線改成和背景色相同, 視覺上讓線消失 */
+		.active {z-index:2;}								/* 讓該 content 顯示在堆疊順序的最上方 */
+
+		
+	</style>
+</head>
+<body>
+	<div id="tab-control">
+		<div id="tab1" class="tabs selected"><a href="#">Tab 1</a></div>
+		<div id="tab2" class="tabs"><a href="#">Tab 2</a></div>
+		<div id="tab3" class="tabs"><a href="#">Tab 3</a></div>
+		
+		<div id="content1" class="content active">
+			<span>Content 1</span>
+		</div>
+
+		<div id="content2" class="content">
+			<span>Content 2</span>
+		</div>
+
+		<div id="content3" class="content">
+			<span>Content 3</span>
+		</div>
+		
+	</div>
+</body>
+</html>

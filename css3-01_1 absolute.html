@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Absoulte Position</title>
+	<style>
+		body { color : #000080;}
+		hr { border : 2px dashed red;}
+		#outer { width:800px;height:500px;background:pink; }
+		#inner { width:500px;height:300px;background:green;}
+		
+		/*
+			觀察 Absoulte Position 的行為
+			
+			1. 將 inner div 設定 absolute position
+			2. 將 inner div 設定 top = 0, left = 0
+			3. 將 outer div 設定 absolute position
+		*/
+		
+		/* 絕對位置 :
+			–將元素從HTML 元素流(flow of HTML elements)的正常位置移出到頁面的指定位置 */
+		
+		#inner { position:absolute; top:0; left:0;}
+		#outer { position:absolute;}
+		
+	</style>
+</head>
+<body>
+	<h1>Absoulte Position 示範</h1><hr><br/><br/>
+
+	<div id="outer" style="">
+		<p>The element is positioned relative to its first positioned (not static) ancestor element.</p>
+		<p>The element is positioned relative to its first positioned (not static) ancestor element.</p>
+
+		<div id="inner" style="">
+		</div>
+
+		<p>The element is positioned relative to its first positioned (not static) ancestor element.</p>
+		<p>The element is positioned relative to its first positioned (not static) ancestor element.</p>
+	</div>
+</bodY>
+</html>

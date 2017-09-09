@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Layout</title>
+	<style>
+		body {
+			margin:0;
+			font-size : 2em;
+		}
+		
+		.wrapper {
+			width : 100%;
+		}
+		
+		.center-area {
+			width : 960px;
+			margin : 0 auto;
+		}
+		
+		.row1 {
+			background-color : rgb(255, 174, 201);
+		}
+		
+		.row2 {
+			background-color : #eee;
+		}
+
+		.row3 {
+			background-color : #eee;
+			display:inline-block;
+		}
+
+		.row4 {
+			background-color : rgb(255, 174, 201);
+		}
+
+		header {
+			background : #ffff80;
+			height : 100px;
+			line-height : 100px;
+			text-align : center;
+		}
+		
+		nav {
+			background : gray;
+			height : 50px;
+			line-height : 50px;
+			text-align : center;
+		}
+
+		#main {
+			background : #80ffff;
+		}
+		
+		footer {
+			background : #ffad5b;
+			height : 100px;
+			line-height : 100px;
+			text-align : center;
+		}
+		
+		#menu {
+			background : #ccc;
+			width: 200px;
+			height : 200px;
+			line-height : 200px;
+			text-align : center;
+		}
+		
+		#content {
+			width : 760px;
+			height : 200px;
+			line-height : 200px;
+			text-align : center;
+			background : yellow;
+		}
+		
+		#banner { 
+			width:300px;
+			height:200px;
+			background:green;
+			color:white;
+			text-align : center;
+			line-height:200px;
+		}		
+		
+		
+		/* 
+			請設定 fix position
+			1. 廣告Banner : 固定於 top:200px; right:100px;
+			2. 功能表置頂
+		*/
+		
+		#banner {position:fixed; top:200px;	right:100px;}	/* 把 banner 做fix在瀏覽器固定位置 */
+		.row1 {position:fixed;}								/* header 固定在最上面 */
+		.row2 {position:fixed; top:100px;}					/* 讓nav 顯示出來 */
+		.row3 {margin-top:150px; margin-bottom:100px;}		/* 讓 content 01~04 和 38~40 顯示出來, top, bottom 依照 header, nav和 footer的高度 */
+		.row4 {position:fixed; bottom:0;}					/* footer 固定在最下方 */
+		
+		
+	</style>
+</head>
+	<div class="wrapper row1">
+		<header class="center-area">
+			&lt;Header&gt;
+		</header>
+	</div>
+
+	<div class="wrapper row2">
+		<nav class="center-area">
+			&lt;NAV&gt;
+		</nav>
+	</div>
+	<div class="wrapper row3">
+		<div id="main" class="center-area">
+		
+			Content 01<br/>
+			Content 02<br/>
+			Content 03<br/>
+			Content 04<br/>
+			Content 05<br/>
+			Content 06<br/>
+			Content 07<br/>
+			Content 08<br/>
+			Content 09<br/>
+			Content 10<br/>
+			Content 11<br/>
+			Content 12<br/>
+			Content 13<br/>
+			Content 14<br/>
+			Content 15<br/>
+			Content 16<br/>
+			Content 17<br/>
+			Content 18<br/>
+			Content 19<br/>
+			Content 20<br/>
+			Content 21<br/>
+			Content 22<br/>
+			Content 23<br/>
+			Content 24<br/>
+			Content 25<br/>
+			Content 26<br/>
+			Content 27<br/>
+			Content 28<br/>
+			Content 29<br/>
+			Content 30<br/>
+			Content 31<br/>
+			Content 32<br/>
+			Content 33<br/>
+			Content 34<br/>
+			Content 35<br/>
+			Content 36<br/>
+			Content 37<br/>
+			Content 38<br/>
+			Content 39<br/>
+			Content 40<br/>
+
+			
+			<!--
+		
+			<div id="menu">
+				Menu
+			</div>
+			
+			<div id="content">
+				Content
+			</div>
+			
+			-->
+			
+		</div>
+	</div>
+
+	<div class="wrapper row4">
+		<footer class="center-area">
+			&lt;Footer&gt;
+		</footer>
+	</div>
+	
+	<div id="banner">
+		我是廣告
+	</div>
+	
+	
+</bodY>
+</html>
