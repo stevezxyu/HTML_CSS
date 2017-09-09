@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Pseudo Class</title>
+	<style>
+		div { height:50px; margin:10px 200px; border:1px solid black; background:yellow;text-align:center;line-height:50px; }
+		
+		/*
+			1. 設定游標滑入時, 文字顏色 yellow, 背景色 #0c0
+			2. 按下滑鼠後, 文字顏色 red
+		*/
+		
+		/*  default : 連結尚未訪問過
+			hover : 滑鼠移入
+			active : 滑鼠按下和放開按鈕的期間
+			visited : 連結已訪問過
+		*/
+		
+		/* link, visited, hover, active的順序很重要, active要放最後 */
+		
+		div:hover {background:#0c0; color:yellow;}
+		div:active {color:red;}
+		
+	</style>
+</head>
+<body>
+	<h1>Customize Link Styles</h1><hr>
+	<div>虛擬類別選擇器</div>
+	</br>
+
+</body>
+</html>

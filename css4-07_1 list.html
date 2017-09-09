@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS4</title>
+	<style>
+		.div-block { height:50px; margin:10px 200px; border:1px solid black; background:yellow;text-align:center;line-height:50px; }
+		
+		#div-link:hover { background:#0c0;color:yellow; }
+		#div-link:active { color:red; }
+		
+		.div-button { 
+			height:93px;
+			width:93px;
+			background:url(images/buttons.png); 
+			font-size:150%; 
+			color:white;
+			text-align:center;
+			line-height:93px;
+			float:left;  
+		}
+		
+		.borderedlist li { border:1px solid black; width:350px; }
+		
+	</style>
+</head>
+<body>
+	
+	<h1 style="clear:left">List</h1><hr>
+	<div style="margin-left:200px;">
+
+		<h2>list-style-type</h2><hr></br>
+		<!-- disc, circle, square -->
+		<ul style="list-style-type:disc;">
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Coca Cola</li>
+		</ul></br>
+		
+		<!-- decimal, decimal-leading-zero, lower-alpha, lower-roman, upper-alpha, upper-roman -->
+		<ol style="list-style-type:decimal-leading-zero;">
+			<li>Coffee</li>
+			<li>Tea</li>
+			<li>Coca Cola</li>
+		</ol></br></br>
+		
+		<h2>list-style-position</h2><hr></br>
+		<p>inside list-style-position : inside the content flow</p>
+		<ul class="borderedlist" style="list-style-position:inside;">
+			<li>Earl Grey Tea - A fine black tea</li>
+			<li>Jasmine Tea - A fabulous "all purpose" tea</li>
+			<li>Honeybush Tea - A super fruity delight tea</li>
+		</ul>
+		
+		<p>outside list-style-position : outside the content flow</p>
+		<ul class="borderedlist" style="list-style-position:outside;">
+			<li>Earl Grey Tea - A fine black tea</li>
+			<li>Jasmine Tea - A fabulous "all purpose" tea</li>
+			<li>Honeybush Tea - A super fruity delight tea</li>
+		</ul></br>
+		
+		<h2>list-style-image</h2><hr></br>
+		
+		<!-- 設定 list-style-image 為 images/list-style-image.jpg -->
+		<ul style="list-style-image:url(images/list-style-image.jpg)">
+			<li>Coffee</li>
+			<li>Tea</li>
+				<ol style="list-style-image:none;">		<!-- 裡面內層會被外層所影響 -->
+					<li>Earl Grey Tea - A fine black tea</li>
+					<li>Jasmine Tea - A fabulous "all purpose" tea</li>
+					<li>Honeybush Tea - A super fruity delight tea</li>
+				</ol>
+			<li>Coca Cola</li>
+		</ul></br>
+	</div>
+
+</body>
+</html>

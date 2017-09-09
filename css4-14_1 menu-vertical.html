@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vertical Menu</title>
+	<style>
+	
+		ul, ol { list-style-type:none; border:1px dashed red;width:100px;border-bottom:none;}
+		li { margin:0 0 0 -40px;}
+		a { text-decoration:none; color:purple; background:pink;display:inline-block;width:100px; padding:5px 20px;border-bottom:1px dashed red;}
+		a:hover { background:yellow; color:navy; }
+		a:active { color: red; }
+		
+		
+		/*
+			1. 第2層功能表(ol)置於第1層功能表(ul li)的右方 (top:0; left:135px;)
+				提示 : 第2層(ol)如何定位在第一層(ul li)的 (0,0) 位置 ?
+			
+			2. 預設 第2層功能表(ol)不顯示, 且圖層(z-index)要比第1層功能表高
+			
+			3. 當滑鼠移入第1層功能表時, 顯示第2層功能表
+		*/
+		
+		
+		ul li {
+			position:relative;				/* 先設定位置, 使用 relative 包住 absolute */
+		}
+		
+		ol {
+			position: absolute;
+			top: 0;
+			left: 135px;
+		
+			z-index: 2;				/* 第2層功能表(ol)不顯示, 且圖層(z-index)要比第1層功能表高 */
+			display: none;
+		}
+		
+		ul li:hover	ol {			/* 當滑鼠移入第1層功能表時, 顯示第2層功能表 */
+			display: block;
+		}
+		
+				
+	</style>
+</head>
+<body>
+
+	<ul>
+		<li>
+			<a href="#">整體類</a>
+			<ol>
+				<li><a href="#">第一節</a></li>
+				<li><a href="#">第二節</a></li>
+				<li><a href="#">第三節</a></li>
+				<li><a href="#">第四節</a></li>
+				<li><a href="#">第五節</a></li>
+				<li><a href="#">第六節</a></li>
+			</ol>
+		</li>
+		
+		<li>
+			<a href="#">文字類</a>
+			
+			<ol>
+				<li><a href="#">第一節</a></li>
+				<li><a href="#">第二節</a></li>
+				<li><a href="#">第三節</a></li>
+				<li><a href="#">第四節</a></li>
+				<li><a href="#">第五節</a></li>
+				<li><a href="#">第六節</a></li>
+			</ol>
+		</li>
+
+		<li>
+			<a href="#">連結類</a>
+			
+			<ol>
+				<li><a href="#">第一節</a></li>
+				<li><a href="#">第二節</a></li>
+				<li><a href="#">第三節</a></li>
+				<li><a href="#">第四節</a></li>
+				<li><a href="#">第五節</a></li>
+				<li><a href="#">第六節</a></li>
+			</ol>
+		</li>
+		
+		<li>
+			<a href="#">清單類</a>
+			
+			<ol>
+				<li><a href="#">第一節</a></li>
+				<li><a href="#">第二節</a></li>
+				<li><a href="#">第三節</a></li>
+				<li><a href="#">第四節</a></li>
+				<li><a href="#">第五節</a></li>
+				<li><a href="#">第六節</a></li>
+			</ol>
+		</li>
+	</ul>
+
+</bodY>
+</html>
