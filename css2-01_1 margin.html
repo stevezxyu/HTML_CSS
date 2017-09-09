@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Margin</title>
+	<style>
+		h1 { text-align:center; }
+		body {background:#ccc;}
+		#content {background:white;}
+		#box { height:50px;color:white;background:#0a0;text-align:center;line-height:50px;}
+		
+		/*
+			目標一 :
+			1. 頁面邊緣(100px, 0)
+			2. 元素邊緣(100px)
+			
+			目標二 :
+			3. 元素邊緣(50px 100px 150px 200px;)
+			
+			目標三 :
+			4. 元素邊緣(負值)
+			
+			目標四 :
+			5. 元素邊緣(水平置中)
+		*/
+		
+		
+		/* 目標一 */
+		body {margin:0;}        /* 設定為0的時候可省略單位, page margin 必須先設定為0將邊框填滿 */
+		#box {margin:100px;}
+		
+		
+		/* 目標二 */
+		/* 僅1個參數是四邊皆相同長度，2個參數是上下、左右，3個參數是上、左右、下，4個參數是上、右、下、左 */
+		#box {margin:50px 100px 150px 200px;}     /* 順序依序為上、右、下、左 */
+		
+		
+		/* 目標三 */
+		#box {margin-left:-400px;}
+		
+		
+		/* 目標四 */
+		#box {width:800px; margin:0 auto;}     /* margin若僅有2個參數, 則第1個參數是上下設定為0, 第2個參數是左右設定為auto調整在正中間 */
+		
+		
+	</style>
+</head>
+<body>
+	<div id="content">
+		<h1>Margin(邊緣)</h1><hr>
+		<div style="height:50px;background:yellow;margin:0"></div>
+		<div id="box" style="">Margin Test</div>
+		<div style="height:50px;background:yellow;margin:0"></div>
+	</div>
+</bodY>
+</html>

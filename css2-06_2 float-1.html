@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Float - Sibling</title>
+	<style>
+		h1 { text-align:center; }
+		.box1 { width:150px;height:100px;border:1px solid red;margin:3px;color:white;background:#0a0;text-align:center;line-height:100px;}
+		.box2 { width:200px;height:150px;border:1px solid red;margin:3px;color:white;background:#aa0;text-align:center;line-height:150px;}
+		
+		/*
+			目標一 : float
+			1. 將 6個 box1 設定 float
+			2. 觀察 : 瀏覽器寬度縮小
+			
+			目標二 : clear
+			3. 將 last 罝於6個 box1 的下方
+		*/
+		
+		/* 目標一 */
+		.box1 {float:left;}
+		
+		
+		/* clear屬性控制一個元素是否允許有浮動元素在它的左右
+			–當使用left屬性值, 則沒有元素可以出現在它的左側
+			–當使用right屬性值, 則沒有元素可以出現在它的左側
+			–當使用both屬性值, 則沒有元素可以出現在它的左右   */
+		
+		
+		/* 目標二 */
+		#last {clear:left;}
+		
+	</style>
+</head>
+<body>
+	<h1>Floating(浮動)</h1><hr>
+	<div class="box2">A</div>
+	<div class="box1">1</div>
+	<div class="box1">2</div>
+	<div class="box1" style="clear:left;">3</div>     <!-- 方塊3的左側不要有元素出現 -->
+	<div class="box1">4</div>
+	<div class="box1">5</div>
+	<div class="box1">6</div>
+	<div id="last" class="box2" style="clear:left;">B</div>     <!-- 目標二 -->
+	
+
+</bodY>
+</html>

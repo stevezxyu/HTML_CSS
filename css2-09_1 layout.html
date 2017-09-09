@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Layout</title>
+	<style>
+		/*
+			1. 觀察HTML文件的結構
+				第一列 : 容器<div>背景為粉紅色 rgb(255, 174, 201) ; 頁首<header>背景為淺黃色 #ffff80
+				第二列 : 容器<div>背景為淺灰色 #eee ; 導覽<nav>背景為灰色 grey
+				第三列 : 容器<div>背景為淺灰色 #eee ; 主要內文區(Content) <div>背景為淺藍色 #80ffff
+				第四列 : 容器<div>背景為粉紅色 rgb(255, 174, 201) ; 頁尾<footer>背景為橘色 #ffad5b
+			2. 四列的容器<div>要滿版(和瀏覽器之間不可有空隙)
+			3. 頁首<header>, 導覽<nav>, 主要內文區(content), 頁尾<footer> , 四個區域的寬度圴為瀏覽器寬度的 80%
+		*/
+		
+		
+		/* 設定整體的邊框和字體大小 */
+		body {
+			margin:0;
+			font-size:2em;
+		}
+		
+		/* 設定 div 的邊框和位置 */
+		div.wrapper {
+			width:100%;
+			margin:0 auto;
+		}
+		
+		/* 調整內文 */
+		.content { 
+			width:80%;
+			border: 1px solid black;    /* 設定黑色邊框 */
+			text-align: center;         /* 置中對齊 */
+			margin:0 auto;
+		}
+	
+		/* 容器的背景 */
+		.row1 {background-color:rgb(255, 174, 201);}
+		.row2 {background-color:#eee;}
+		.row3 {background-color:#eee;}
+		.row4 {background-color:rgb(255, 174, 201);}
+		
+		/* 第一列 */
+		header {background-color:#ffff80;}
+		
+		/* 第二列 */
+		nav {background-color:grey;}
+		
+		/* 第三列 */
+		#main {background-color:#80ffff;}
+		
+		/* 第四列 */
+		footer {background-color:#ffad5b;}
+	
+	
+	</style>
+</head>
+	<div class="wrapper row1">
+		<header class="content">
+			&lt;Header&gt;
+		</header>
+	</div>
+
+	<div class="wrapper row2">
+		<nav class="content">
+			&lt;NAV&gt;
+		</nav>
+	</div>
+	
+	<div class="wrapper row3">
+		<div id="main" class="content">      <!-- 這裡要設定 id 才能使用 id selector -->
+			&lt;Content&gt;
+		</div>
+	</div>
+
+	<div class="wrapper row4">
+		<footer class="content">
+			&lt;Footer&gt;
+		</footer>
+	</div>
+	
+</bodY>
+</html>
