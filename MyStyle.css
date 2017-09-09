@@ -1,0 +1,59 @@
+		/*
+			請加入以下樣式
+			
+			目標一
+			01. 標題的顏色為深藍(#000080), 其它文字的顏色為淺灰(#666)
+			02. 標題 h1 置中
+			03. 英文段落 p 分散對齊
+			04. 英文第一行縮排
+			05. 英文調整字母間距
+			06. 英文調整單字間距
+			07. 英文調整行距
+			08. 中文第一行縮排
+			09. 中文調整字距   /* 使用 letter-spacing */
+			10. 中文調整行距
+			11. 頁尾靠右對齊, 調整字距
+			
+			目標二
+			12. 標題 h1 字體 : Comic Sans MS, Arial, sans-serif, 標楷體
+			
+			目標三
+			13. 請改為連結樣式表
+		*/
+		
+		
+		/* 目標一 */
+		body {background-color:#666;}    /* 先設定 body的背景是淺灰色#666 */
+		h1 {color:#000080;text-align:center;}    /* h1是標題, text-align:center 水平的置中對齊 */
+		p {text-align:justify;}    /* text-align:justify 水平的分散對齊 */
+				
+		/* text-indent 第一行縮排, letter-spacing 調整字母間距, word-spacing 調整單字間距, line-height 調整列高 */
+		p {
+			text-indent:50px; 
+			letter-spacing:1px; 
+			word-spacing:3px;
+			line-height:18px;			
+		}
+		
+		div {
+			text-indent:20px;
+			letter-spacing:5px;
+			line-height:20px;
+		}
+		
+		footer {
+			text-align:right;
+			letter-spacing:3px;
+		}
+		
+		
+		/* 目標二 */
+		/* 中文字體包含的 font-family 範圍較大, 要放在字型的最後, 避免覆蓋全部的字形 */
+		/* font-size 和 font-family 必須放在最後2個 */
+		h1 {font-family:"Comic Sans MS", Arial, sans-serif, 標楷體}
+		
+		
+		/* 目標三 */
+		/* 開啟 css1-04_2 text.html */		
+		
+		

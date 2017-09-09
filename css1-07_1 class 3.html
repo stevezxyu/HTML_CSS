@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Class Selector</title>
+	<style>
+		.font-small {font-size:1em;}     /* 非相依類別選擇器(類別選擇器) .___ */
+		
+		button.font-small {font-size:0.8em}    /* 元素類別選擇器, 開頭為元素 */
+	</style>
+</head>
+<body>
+	<p class="font-small">段落內的小字體</p>
+	
+	<div class="font-small">DIV內的小字體</div><br/>
+	
+	<button class="font-small">按鈕內的小字體</button>    <!-- 根據 style內對應的元素 button, 且元素類別選擇器的權重為11較高於其他選擇器 -->
+
+</body>
+</html>

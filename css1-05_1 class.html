@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Class Selector</title>
+	
+	<style>
+		/*
+			目標一
+			1. 數字儲存格靠右對齊
+			2. 表格標題(caption)的背景色為淺藍色 : #d2e8ff
+			3. 橫向標題列的背景色為深藍色 : #9dc9fd
+			4. 直向標題列的背景色為淺藍色 : #d2e8ff
+			
+			目標二
+			5. 業績最好的銷售數字,字型改為粗體, 顏色為藍色:#00f, 背景色為黃色 : #ff0
+		*/
+	
+		table, caption, th, td { border:1px solid #429fff; }
+		
+		table {
+			border-collapse : collapse;
+			width : 50%;
+		}
+		
+		
+		/* 目標一 */
+		td {text-align:right;}         /* td 內是數字表格 */
+		caption {background:#d2e8ff;}
+		th {background:#9dc9fd;}       /* th 內是橫向的標題 */
+		th.lbl {background:#d2e8ff;}   /* 建立 class類別和賦予名稱, 再針對該類別的名稱進行設定 */
+		
+		
+		/* 目標二 */
+		/* 同一個頁面僅能有一個id, 實務上盡量使用 class 以避免權重過大無法套用其他樣式 */
+		td#top {color:#00f; background-color:#ff0; font-weight:bold;}     /* 先建立ID名稱, 再使用 '#' + ID選擇器(唯一)進行設定 */
+		
+		
+	</style>
+	
+</head>
+<body>
+	<table>
+		<caption>數位產品年度銷售狀況</caption>
+
+		<tr>
+			<th></th>
+			<th>2012</th>
+			<th>2013</th>
+			<th>2014</th>
+			<th>2015</th>
+		</tr>
+		
+		<tr>
+			<th class="lbl">個人電腦</th>
+			<td>6,977</td>
+			<td>7,025</td>
+			<td>8,546</td>
+			<td>7,953</td>
+		</tr>
+
+		<tr>
+			<th class="lbl">投影機</th>
+			<td>5,452</td>
+			<td>6,557</td>
+			<td>5,846</td>
+			<td>7,035</td>
+		</tr>
+
+		<tr>
+			<th class="lbl">手機</th>
+			<td>8,000</td>
+			<td>8,100</td>
+			<td>8,760</td>
+			<td>8,490</td>
+		</tr>
+
+		<tr>
+			<th class="lbl">數位相機</th>
+			<td>3,200</td>
+			<td>3,120</td>
+			<td>3,700</td>
+			<td>4,210</td>
+		</tr>
+		
+		<tr>
+			<th class="lbl">商務電腦</th>
+			<td>28,400</td>
+			<td>27,100</td>
+			<td>27,950</td>
+			<td id="top">29,050</td>
+		</tr>
+	</table>
+</body>
+</html>

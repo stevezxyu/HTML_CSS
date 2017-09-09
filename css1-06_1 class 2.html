@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Class Selector</title>
+	<style>
+		.justify{text-align:justify;}	/* 分散對齊 */
+		.center{text-align:center;}		/* 置中對齊 */
+		.right{text-align:right;}		/* 靠右對齊 */
+
+		.bold{font-weight:bold;}		/* 粗體 */
+		.uppercase{text-transform:uppercase;}	/* 大寫 */
+		.lowercase{text-transform:lowercase;}	/* 小寫 */
+		
+		.font-small {font-size:1em;}		/* 小字體 */
+		.font-medium {font-size:1.2em;}		/* 中字體 */
+		.font-large {font-size:1.4em;}		/* 大字體 */
+	
+		.full-width { width:99%; }				/* 滿版寬度 */
+		.one-third { width:31%; margin:1%; }	/* 1/3 版面寬度 */
+		.two-third { width:64%; maring:1%;}		/* 2/3 版面寬度 */
+	</style>
+</head>
+<body>
+	<!-- 先設定樣式, 再套入類別裡面 -->
+	<!-- 粗體, 大寫, 大字體, 2/3版面寬度 分散對齊 -->
+	<h1 class="bold uppercase font-large two-third justify">iPhone in 2017 will feature curved glass, 5.8-inch AMOLED display and much more</h1>
+
+	<hr>
+	
+	<!-- 粗體, 大寫, 中字體, 2/3版面寬度 分散對齊 -->
+	<h1 class="bold uppercase font-medium two-third justify">iPhone in 2017 will feature curved glass, 5.8-inch AMOLED display and much more</h1>
+
+	<hr>
+
+	<!-- 粗體, 大寫, 小字體, 2/3版面寬度 分散對齊 -->
+	<h1 class="uppercase uppercase font-small two-third justify">iPhone in 2017 will feature curved glass, 5.8-inch AMOLED display and much more</h1>
+
+
+</body>
+</html>
