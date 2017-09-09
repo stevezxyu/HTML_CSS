@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Border Image</title>
+	<style>
+		/*
+			框線圖檔 : images/border.png
+			width × height : 81 × 81, 請以九等分平均切割
+		*/
+	
+		div.ex1 {
+			width:600px;
+			height:250px;
+			margin:30px;
+			
+			border:30px solid transparent;					/* 邊框的粗細, 透明色 */
+			border-image:url(images/border.png)	27 round;	/* 插入image, 上下左右距離是27px(81px分成上下左後各3個部分), round 使圖片不會破碎 */
+		}
+			
+		/*
+			背景圖檔 : images/reel-bg.jpg
+			捲軸圖檔 : images/reel.jpg
+			切割方式 : 上下 5 pixels, 左右 30 pixels
+		*/
+		
+		div.ex2 {
+			width:600px;
+			height:250px;
+			margin:30px;
+			
+			font-size:7em;
+			font-weight:bold;
+			text-align:center;
+			line-height:250px;
+			
+			background:url(images/reel-bg.jpg);				/* 插入背景圖片 */
+			border:30px solid transparent;						/* 邊框的粗細, 透明色 */
+			border-image:url(images/reel.jpg) 5 30 round;		/* 上下距離切5px, 左右切30px */
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+	<div class="ex1">
+	</div>
+	
+	<br><br><br>
+		
+	<div class="ex2">
+		奉天承運
+	</div>
+		
+</bodY>
+</html>

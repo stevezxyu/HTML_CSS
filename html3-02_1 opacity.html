@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Opacity - 透明</title>
+	<style>
+		#ex1 img {
+			width:150px;
+			height:113px;
+			margin:5px;
+		}
+		
+		.outer {
+			width:750px;
+			height:500px;
+			margin:10px;
+		}
+		
+		.inner {
+			width:740px;
+			padding:5px;
+			letter-spacing:2px;
+			line-height:1.5em;
+		}
+		
+		#ex1>img {opacity: 0.3;}		/* 圖片改成透明 0.3 */
+		#ex1>img:hover {opacity: 1;}	/* 滑鼠游標移到圖片變成不透明 */
+		
+		.inner {
+			color: white;
+			background: rgba(0, 0, 0, 0.6);		/* 前景色是白色, 透明程度 0.6 */
+			
+			display:none;			/* 預設為不顯示 */
+		}
+		
+		.outer:hover .inner {		/* 父元素被 hover, 子元素才會顯示出來 */
+			display:block;			/* div 預設是 block */
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+	<h1>透明使用範例一</h1><hr><br/>
+	<div id="ex1">
+		<img src="images/klematis.jpg"> <img src="images/klematis2.jpg"> 
+	</div>
+	
+	<br/>
+	
+	<h1>透明使用範例二</h1><hr><br/>
+	
+	<div id="ex2">
+	
+		<div class="outer" style="background-image:url(images/background.jpg);">
+			<div class="inner">
+				<h1>雨勢趨緩 北部東北部天氣轉涼.</h1><hr>
+				<p>（中央社台北28日電）中央氣象局表示，今天上半天各地天氣仍不穩定，不過北部、東北部雨勢可望逐漸趨緩，中南部及花東雨勢緩和的時間點較晚；另東北風會帶來較乾涼的空氣 ...</p>
+				<p>中央社•8 小時前</p>
+			</div>
+		</div>
+	
+		
+
+	</div>
+	
+</body>
+</html>

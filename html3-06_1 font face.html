@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Font Face</title>
+	<style>
+		/*
+			1. 請增加字體 : fonts/blackopsone-regular-webfont.woff
+			2. 使用於第一個段落<p>
+			
+			3. 請增加字體 : fonts/SentyCreamPuff.woff  新蒂泡芙體
+			4. 使用於第二個段落<p>
+		*/
+		
+		@font-face {
+		   font-family: "steve";		/* font-face 的命名 */
+		   src: url(fonts/blackopsone-regular-webfont.woff) format("woff");		/* woff是W3C標準專業於網頁的字體格式 */
+		}
+		
+		@font-face {
+		   font-family: "steve2";
+		   src: url("fonts/SentyCreamPuff.woff") format("woff");
+		}
+		
+
+	</style>
+</head>
+<body>
+
+	<h1>Web Fonts</h1><hr>
+	<p style="font:1.5em steve">		<!-- 設定使用 font-face的樣式 -->
+		The largest urban rooftop farm in the world is thriving in a city that’s typically one of the coldest spots in the U.S. — Chicago.
+		No matter though: The 75,000-square-foot farm, bigger than a city block, is also the world’s largest greenhouse. So it gets all the natural light and none of the snow, sleet, and slush the city is well known for. When you see these cheerful, lush photos, you’ll probably want to move in.
+	</p>
+	
+	</br>
+	
+	<p style="font:2em steve2">
+		【玩全台灣旅遊網報導】「樟平溪自行車道」座落於自然資源豐碩的中寮鄉內，傍著樟平溪徐行至清城山莊約有3.1公里，綠意盎然的車道平緩好騎、空氣清新，寬廣的道路連汽車也能通行。
+	</p>
+	
+	</br>
+		
+</bodY>
+</html>

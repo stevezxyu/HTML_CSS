@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Text Overflow</title>
+
+	<style>
+	
+		.outer {
+			width:40%;
+			border:1px solid gray;
+			margin:30px 15px;
+		}
+	
+	
+		h1 {
+			text-align:center;
+			background:linear-gradient(to bottom, #b5e61d, white);
+			border-bottom:1px solid gray;
+			font-size:1.2em;
+			margin:0;
+			line-height:2em;
+		}
+		
+		ul {
+			list-style-image:url(images/list-icon.png);
+			list-style-position:inside;
+		}
+		
+		li {
+			margin:5px auto 5px -20px;
+			
+		}
+		
+		
+		/* 請加入 文字溢位 ellipsis 功能 */
+		
+		li {
+			white-space: nowrap;			/* 這三行程式要同時撰寫 */
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	
+	
+	</style>
+	
+</head>
+<body>
+
+	<div class="outer">
+	
+		<h1 id="caption">體育新聞</h1>
+		
+		<ul>
+			<li>旅美球星／曹錦輝投2局沒失分 拿到本季首勝</li>
+			<li>高爾夫》俞俊安躋身世界三十強，業餘排名二十九創新高.</li>
+			<li>高爾夫》突破韓國軍團包圍，皮勒領先北德州女子賽.</li>
+			<li>中華職棒／獅洋投吉爾漸入佳境 投球機制全面調適.</li>
+			<li>MLB／釀酒人三殺守備 但馬林魚6連勝.</li>
+			<li>〈旅美球員〉羅國華摘中繼成功 曹錦輝奪本季首勝.</li>
+		</ul>
+	
+	</div>
+		
+</bodY>
+</html>

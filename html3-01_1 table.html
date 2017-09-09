@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nth Child</title>
+	<style>
+		table {border-collapse: collapse;width:500px;}
+		th,td {border:1px solid black;text-align:center;}
+		th { background:green;color:white;}
+		
+		/*
+			1. 所有儲存格背景色 #ccc
+			2. 奇數列儲存格背景色 #3e3;
+			3. 滑鼠滑過時,該列字體顏色 navy, 背景色 yellow
+			4. 第4欄加上3px紅框
+		*/
+		
+		
+		td { background-color:#ccc;}
+		tr:nth-child(2n+1)>td {background-color:#3e3;}			/* '>' 是僅繼承下一層 */
+		tr:hover td {color:navy; background: yellow;}
+		
+		
+		/* 第4欄加上3px紅框, 先畫左右的框線, 再畫上下的框線 */
+		
+		td:nth-child(4), th:nth-child(4) {		/* 儲存格和標題 */
+			border-left:3px solid red;
+			border-right:3px solid red;
+		}
+		
+		th:nth-child(4) {border-top:3px solid red;}
+		tr:nth-child(10) td:nth-child(4) {border-bottom:3px solid red;11}
+		
+		
+	</style>
+</head>
+<body>
+
+	<h1>Nth Child</h1><hr>
+	<table>
+		<tr>
+			<th>Title1</th><th>Title2</th><th>Title3</th><th>Title4</th><th>Title5</th>
+		</tr>
+		<tr>
+			<td>(1.1)</td><td>(1.2)</td><td>(1.3)</td><td>(1.4)</td><td>(1.5)</td>
+		</tr>
+		<tr>
+			<td>(2.1)</td><td>(2.2)</td><td>(2.3)</td><td>(2.4)</td><td>(2.5)</td>
+		</tr>
+		<tr>
+			<td>(3.1)</td><td>(3.2)</td><td>(3.3)</td><td>(3.4)</td><td>(3.5)</td>
+		</tr>
+		<tr>
+			<td>(4.1)</td><td>(4.2)</td><td>(4.3)</td><td>(4.4)</td><td>(4.5)</td>
+		</tr>
+		<tr>
+			<td>(5.1)</td><td>(5.2)</td><td>(5.3)</td><td>(5.4)</td><td>(5.5)</td>
+		</tr>
+		<tr>
+			<td>(6.1)</td><td>(6.2)</td><td>(6.3)</td><td>(6.4)</td><td>(6.5)</td>
+		</tr>
+		<tr>
+			<td>(7.1)</td><td>(7.2)</td><td>(7.3)</td><td>(7.4)</td><td>(7.5)</td>
+		</tr>
+		<tr>
+			<td>(8.1)</td><td>(8.2)</td><td>(8.3)</td><td>(8.4)</td><td>(8.5)</td>
+		</tr>
+		<tr>
+			<td>(9.1)</td><td>(9.2)</td><td>(9.3)</td><td>(9.4)</td><td>(9.5)</td>
+		</tr>
+	</table>
+	
+
+	
+</body>
+</html>

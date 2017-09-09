@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+	<style>
+		body {margin:0;padding:0;}
+		h1 {text-align:center}
+		
+		div {
+			margin:0 auto;
+			text-align:center;
+			width:400px;
+			height:150px;
+			background:#2c2;
+			color:white;
+			line-height:150px;
+			box-shadow: 7px 7px 18px #333333;
+		}
+		
+		div#translate-div:hover { 
+			/* 請在 x 方向位移 160px */
+			transform: translate(160px,0);
+		}
+		
+		div#scale-div:hover { 
+			/* 請放大 1.2 倍 */
+			transform: scale(1.2);		/* x,y的縮放比例可不相同, 寫一個值表示x,y都相同 */
+		}
+		
+		div#rotate-div:hover { 
+			/* 請旋轉 15deg */
+			transform: rotate(15deg);
+		}
+		
+		div#skew-div:hover { 
+			/* 請傾斜 -10deg */
+			transform: skew(-10deg);
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<h1>Transform(變形)</h1><hr>
+	<div id="translate-div">Translate(位移)</div>
+	</br>
+	<div id="scale-div">Scale(縮放)</div>
+	</br>
+	<div id="rotate-div">Rotate(旋轉)</div>
+	</br>
+	<div id="skew-div">Skew(傾斜)</div>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+	</br>
+</body>
+</html>

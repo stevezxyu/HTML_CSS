@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Text Shadow</title>
+	<style>
+		p {
+			text-align:center;
+			padding:24px;
+			font-family:helvetica, arial, sans-serif;
+			font-size:80px;
+			font-weight:bold;
+		}
+	
+		p.gray {
+			color:#d1d1d1;
+			background:#ccc;
+		}
+		
+		/* 請參考文字樣式 */
+		
+		p:nth-child(1) {
+			text-shadow:-1px -1px white, 1px 1px #333;
+		}
+		
+		p:nth-child(2) {
+			text-shadow:-1px -1px #333, 1px 1px white;
+		}
+		
+		p:nth-child(3) {
+			text-shadow:-1px 0 black, 0 -1px black, 1px 0 black, 0 1px black;
+		}
+		
+		p:nth-child(4) {
+			text-shadow:0 0 0.1em 0 white;
+		}
+		
+		p:nth-child(5) {
+			color:white;
+			text-shadow:0.03em 0.04em 0.05em #777777, -0.02em -0.03em 0.05em #999999;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<p class="gray">Text Shadow</p>
+	<p class="gray">Text Shadow</p>
+	<p class="gray">Text Shadow</p>
+	<p class="gray">Text Shadow</p>
+	<p>Text Shadow</p>
+
+</bodY>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Horizontal Menu</title>
+	<style>
+	
+		body { margin:0; padding:0 }
+		.center { margin:0 auto; text-align:center;}
+
+		.width200 { width:200px; }
+		.width300 { width:300px; }
+		.width400 { width:400px; }
+		.width500 { width:500px; }
+		.height50 { height:50px; line-height:50px;}
+		.height75 { height:75px; line-height:75px;}
+		.height100 { height:100px; line-height:100px;}
+		.height150 { height:150px; line-height:150px;}
+		.height200 { height:200px; line-height:200px;}
+
+		.bg-yellow { background:yellow; color:#444; }
+		.bg-green { background:#2c2; color:white; }
+		
+		.solidborder { border:1px solid black; margin-top:5px;}
+		
+		#shadow1 {
+			width:200px;
+			height:150px;
+			margin-top:80px;
+			margin-bottom:100px;
+			border:1px solid red;
+		}
+		
+	
+	
+		/*
+			目標一
+			1. 請針對 #round1, 增加 20px 的圓角
+			2. 請針對 #round2, 增加 右上 10px, 左下 10px 的圓角
+			
+			目標二
+			3. 請針對 #round2, 增加陰影 : 7px 7px 24px 0px #555;
+			4. 請針對 #shadow1 增加多層框
+		*/
+		
+		#round1 { border-radius:20px;}				/* 四個邊角皆做圓角 */
+		#round2 {
+			border-top-right-radius: 10px;			/* 右上做圓角 */
+			border-bottom-left-radius: 10px;		/* 左下做圓角 */
+			box-shadow: 7px 7px 24px 0px #555;		/* 做陰影 */
+		}
+		
+		#shadow1 {
+			border-radius:10%;
+			box-shadow:0 0 0 10px red, 0 0 0 20px orange, 0 0 0 30px yellow;	/* 迴圈狀陰影 */		
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<br/>
+	<br/>
+	<h1 class="center">圓角矩形</h1><hr>
+	<div id="round1" class="center width500 height200 bg-green">
+		<aside id="round2" class="width200 height100 bg-yellow" style="float:right;margin:15px;">旁白</aside>
+		圓角矩形
+	</div>
+	</br><br/>
+	
+	<h1 class="center">其它範例</h1><hr><br/>
+	<div id="shadow1" class="center">
+	</div>
+
+
+	
+	
+</bodY>
+</html>
