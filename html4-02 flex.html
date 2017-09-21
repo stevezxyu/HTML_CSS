@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flex</title>
+	<style>
+		#main {
+			display: flex;
+			flex-flow: row;
+			flex-wrap : wrap;
+
+			width : 100%;
+			height : 300px;
+			
+			text-align : center;
+			line-height : 100px;
+			font-size : 200%;
+		}
+		
+		#main > div {
+			height : 100px;
+		}
+
+		/*
+			1. 設定 #header flex 為 100%
+			2. 設定 #nav flex 為 1 1 200px
+			3. 設定 #article flex 為 3 6 100px
+			4. 設定 #aside flex 為 1 1 200px
+			5. 設定 #footer flex 為 100%
+		*/
+		
+		#main > #header {
+			
+		}
+		
+		#main > #nav {
+			
+		}
+
+		#main > #article {
+			
+		}
+
+		#main > #aside {
+			
+		}
+		
+		#main > #footer {
+			
+		}
+
+
+		</style>
+</head>
+<body>
+	<div style="width:500px;height:100px;background:red;text-align:center;font-size:200%;line-height:100px;">Width : 500px</div></br>
+
+	<div id="main">
+		<div id="header" style="background:yellow">Header</div>
+		
+		<div id="nav" style="background:coral;">Nav</div>
+		<div id="article" style="background:lightblue;">Article</div>
+		<div id="aside" style="background:lightgreen;">Aside</div>
+		
+		<div id="footer" style="background:yellow">Footer</div>
+	</div>
+</body>
+</html>
